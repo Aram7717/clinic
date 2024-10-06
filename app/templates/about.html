@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>درباره ما - کلینیک فیزیوتراپی</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+    <!-- Link to external Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div>
+            <img src="{{ url_for('static', filename='images/123.jpg') }}" alt="logo">
+        </div>
+    
+        <ul>
+            <li><a href="{{ url_for('contact') }}"> نوبت دهی </a></li>
+            <li><a href="{{ url_for('about') }}"> درباره ما</a></li>
+            <li><a href="{{ url_for('services') }}"> خدمات درمانی</a></li>
+            <li><a href="{{ url_for('home') }}"> صفحه اصلی</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section with a Modern Design -->
+    <section class="about" id="about-section">
+        <div class="about-card">
+            <h1 class="about-title">درباره کلینیک فیزیوتراپی ما</h1>
+            <p class="about-text" dir="rtl">
+          
+            
+            از ابتدای فعالیت این موسسه، هدف ما ارائه خدمات کاملاً علمی و تخصصی با استفاده از بهترین و به‌روزترین تجهیزات بود
+            بهره‌مندی از تیم فیزیوتراپی و فیزیوتراپیست‌های کاملاً متخصص و ارائه خدمات فیزیوتراپی در کلینیک و فیزیوتراپی در منزل، از
+            جمله خدمات اولیه‌ای است که در کلینیک ما ارائه می‌شود.
+            
+            الکتروتراپی، مگنت‌تراپی، فیزیوتراپی ورزشی، لیزرتراپی (لیزر پرتوان)، اولتراسوند (US)، فیزیوتراپی کمر، فیزیوتراپی زانو،
+            فیزیوتراپی دست، فیزیوتراپی گردن، فیزیوتراپی سکته مغزی و پارکینسون، و فیزیوتراپی پا بخشی از خدماتی است که در کلینیک
+            فیزیوتراپی آرام ارائه می‌شود
+            </p>
+        </div>
+    </section>
+
+    <!-- Map Section with a Modern Look -->
+    <section class="map" id="map-section">
+        <h2 class="map-title">موقعیت ما</h2>
+        <p>شیراز _ بلوار پاسداران _ نبش خیابان فلاحی</p>
+        <div class="map-container">
+            <!-- Embed a Google Map or other map service -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d216.7716174893778!2d52.48284666468944!3d29.622695956093477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1725451987092!5m2!1sen!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 کلینیک فیزیوتراپی. تمامی حقوق محفوظ است.</p>
+        <p><a href="https://aram77.pythonanywhere.com/">Aram</a> توسعه دهنده </p>
+    </footer>
+    <!-- Link to external JS -->
+    <!-- <script src="{{ url_for('static', filename='js/about.js') }}"></script> -->
+
+</body>
+
+</html>

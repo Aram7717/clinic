@@ -1,0 +1,214 @@
+/* General Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* h1,
+h2 {
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+} */
+
+/* title */
+.navbar div {
+    font-family: Georgia;
+    position: relative;
+    justify-content: space-between;
+    margin: 5px;
+    color: #f0ecec;
+
+}
+
+/* Navigation Bar */
+.navbar {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 15px;
+    text-align: center;
+    background: rgb(14, 239, 245);
+    background: linear-gradient(142deg, rgba(14, 239, 245, 1) 0%, rgba(18, 202, 213, 1) 49%, rgba(9, 127, 150, 1) 96%);
+
+}
+
+.navbar ul {
+    /* float:right; */
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* About Section with a Modern Card Design */
+.about {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.about-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    transition: transform 0.3s ease;
+}
+
+.about-card:hover {
+    transform: scale(1.05);
+}
+
+.about-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.about-text {
+    font-size: 1.2em;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Map Section */
+.map {
+    padding: 40px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.map p{
+    padding: 10px;
+}
+
+.map-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+}
+
+/* Scroll Smooth */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Footer */
+.footer {
+    font-family: times;
+    font-size: 18px;
+    background: rgb(19, 216, 240);
+    background: linear-gradient(142deg, rgba(19, 216, 240, 1) 0%, rgba(5, 188, 198, 1) 49%, rgba(7, 125, 166, 1) 96%);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+.footer p a {
+    color: rgb(235, 228, 7);
+    ;
+}
+
+@media screen and (max-width: 600px) {
+
+    /* Navigation Bar */
+    .navbar {
+        /* justify-content: space-between; */
+        /* align-items: center; */
+        display: grid;
+        position: relative;
+        background-color: #003366;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .navbar ul li a {
+        color: rgb(255, 247, 247);
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .navbar ul {
+        /* float:right; */
+        list-style: none;
+        padding-top: 5px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .navbar ul li {
+
+        display: inline-block;
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+        text-align: center;
+        /* margin: 0 20px; */
+    }
+
+.map-container {
+    width: 100%;
+    max-width: 900px;
+    height: 350px;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.footer {
+    font-family: times;
+    font-size: 14px;
+    background: rgb(19, 216, 240);
+    background: linear-gradient(142deg, rgba(19, 216, 240, 1) 0%, rgba(5, 188, 198, 1) 49%, rgba(7, 125, 166, 1) 96%);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 400px;
+
+}
+
+.footer p a {
+    color: rgb(235, 228, 7);
+    ;
+}
+
+}

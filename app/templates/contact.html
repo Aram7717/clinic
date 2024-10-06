@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تماس با ما - کلینیک فیزیوتراپی</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div>
+            <img src="{{ url_for('static', filename='images/123.jpg') }}" alt="logo">
+        </div>
+    
+        <ul>
+            <li><a href="{{ url_for('contact') }}"> نوبت دهی </a></li>
+            <li><a href="{{ url_for('about') }}"> درباره ما</a></li>
+            <li><a href="{{ url_for('services') }}"> خدمات درمانی</a></li>
+            <li><a href="{{ url_for('home') }}"> صفحه اصلی</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h1>تماس با ما</h1>
+        <p>برای گرفتن ویزیت لظفا با شماره های زیر تماس بگیرید</p>
+        <ul class="phone-numbers">
+            <li>شماره تماس ۱: <a href="tel:+07138478691">+07138478691</a></li>
+            <li>شماره تماس ۲: <a href="tel:+09028467500">+09028467500</a></li>
+        </ul>
+    </section>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 کلینیک فیزیوتراپی. تمامی حقوق محفوظ است.</p>
+        <p><a href="https://aram77.pythonanywhere.com/">Aram</a> توسعه دهنده </p>
+    </footer>
+
+
+    <!-- Link to external JS -->
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+
+</body>
+
+</html>

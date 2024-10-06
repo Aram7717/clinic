@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>کلینیک فیزیوتراپی</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div>
+            <img src="{{ url_for('static', filename='images/123.jpg') }}" alt="logo">
+        </div>
+        
+        <ul>
+            <li><a href="{{ url_for('contact') }}">  نوبت دهی  </a></li>
+            <li><a href="{{ url_for('about') }}">  درباره ما</a></li>
+            <li><a href="{{ url_for('services') }}"> خدمات درمانی</a></li>
+            <li><a href="{{ url_for('home') }}"> صفحه اصلی</a></li>
+        </ul>
+    </nav>
+    <!-- main picture
+    <div class="main-picture">
+        <img src="{{ url_for('static', filename='images/5.jpg')}}" alt="">
+        <div><p>hello</p></div> -->
+
+    </div>
+    <!-- Slideshow Section -->
+    <div class="slideshow-container">
+        <div class="slide fade">
+            <img src="{{ url_for('static', filename='images/p1.png') }}" alt="Slide 1">
+            <div class="slide-text">متن اسلاید </div>
+        </div>
+        <div class="slide fade">
+            <img src="{{ url_for('static', filename='images/p2.jpg') }}" alt="Slide 2">
+            <div class="slide-text">متن اسلاید 2</div>
+        </div>
+        <div class="slide fade">
+            <img src="{{ url_for('static', filename='images/p3.jpg') }}" alt="Slide 3">
+            <div class="slide-text">متن اسلاید 3</div>
+        </div>
+
+        <!-- Navigation arrows -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <!-- Our Services Section -->
+    <section class="services">
+        <h2>خدمات ما</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/i3.jpg') }}" alt="Service 2">
+                <div class="card-text"><h1>فیزیتراپی سالمندان </h1></div>
+            </div>
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/i2.jpg') }}" alt="Service 2">
+                <div class="card-text"><h1>فیزیوتراپی در بیماری های ارتوپدی</h1></div>
+            </div>
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/i1.jpg') }}" alt="Service 3">
+                <div class="card-text"><h1>فیزیوتراپی در آسیب دیدگی های ورزشی</h1></div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 کلینیک فیزیوتراپی. تمامی حقوق محفوظ است.</p>
+        <p><a href="https://aram77.pythonanywhere.com/">Aram</a>  توسعه دهنده  </p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+
+</html>

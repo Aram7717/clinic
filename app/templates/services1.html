@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تماس با ما - کلینیک فیزیوتراپی</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/services1.css') }}">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div>
+            <img src="{{ url_for('static', filename='images/123.jpg') }}" alt="logo">
+        </div>
+
+        <ul>
+            <li><a href="{{ url_for('contact') }}"> نوبت دهی </a></li>
+            <li><a href="{{ url_for('about') }}"> درباره ما</a></li>
+            <li><a href="{{ url_for('services') }}"> خدمات درمانی</a></li>
+            <li><a href="{{ url_for('home') }}"> صفحه اصلی</a></li>
+        </ul>
+    </nav>
+
+    <!-- treatmentes -->
+    <section>
+        <div class="t_text">
+        <h1 >فیزیتراپی سالمتدان</h1>
+        <p >...</p>
+        </div>
+        <div class="t_text">
+        <h1 >فیزیوتراپی در آسیب های ورزشی</h1>
+        <p >...</p>
+        </div>
+        <div class="t_text">
+        <h1 >فیزیوتراپی در بیماری های ارتوپدی</h1>
+        <p >...</p>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 کلینیک فیزیوتراپی. تمامی حقوق محفوظ است.</p>
+        <p><a href="https://aram77.pythonanywhere.com/">Aram</a> توسعه دهنده </p>
+    </footer>
+
+
+    <!-- Link to external JS -->
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+
+</body>
+
+</html>
